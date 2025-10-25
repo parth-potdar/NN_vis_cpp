@@ -32,6 +32,9 @@ class Layer{
         // 1st const: caller cant modify the received value
         // 2nd const: this method itself, when defined, cannot modify the Layer object attrb
     const std::vector<double>& getBiases() const { return biases; }
+    const std::vector<double>& getPreActivation() const { return pre_activation; }
+    const std::vector<double>& getOutput() const { return output; }
+
  
     private: // private attributes
     int num_inputs; // number of inputs to the layer
